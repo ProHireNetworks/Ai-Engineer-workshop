@@ -7,3 +7,4 @@ python-dotenv>=1.0
 tiktoken>=0.7
 pytest>=8.0
 httpx>=0.27
+psycopg[binary]>=3.2
