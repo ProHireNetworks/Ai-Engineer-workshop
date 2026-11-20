@@ -1,0 +1,400 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #243047;
+  background: #f3f7fb;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  background: #f3f7fb;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(120deg, #102c54, #176b87, #20a4a8);
+  color: white;
+  padding: 75px 20px 105px;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 850px;
+  margin: auto;
+}
+
+.brand {
+  display: inline-block;
+  font-size: 19px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  letter-spacing: 1.5px;
+  color: #c9ffff;
+}
+
+.hero h1 {
+  font-size: clamp(30px, 5vw, 46px);
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+
+.hero p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #e1f5f5;
+  max-width: 680px;
+  margin: auto;
+}
+
+/* Main layout */
+.container {
+  max-width: 1100px;
+  margin: -45px auto 55px;
+  padding: 0 20px;
+  position: relative;
+}
+
+/* Form and results */
+.form-section,
+.results-section {
+  background: white;
+  padding: 36px;
+  border-radius: 18px;
+  box-shadow: 0 10px 35px rgba(20, 45, 70, 0.08);
+  margin-bottom: 30px;
+  border: 1px solid #edf1f6;
+}
+
+.section-heading {
+  margin-bottom: 28px;
+}
+
+.section-heading h2 {
+  font-size: 25px;
+  color: #173b5c;
+  margin-bottom: 9px;
+}
+
+.section-heading p {
+  color: #718096;
+  line-height: 1.6;
+}
+
+/* Form */
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 23px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.form-group label {
+  font-weight: 600;
+  font-size: 14px;
+  color: #34445a;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #d9e2ec;
+  border-radius: 9px;
+  font-size: 14px;
+  color: #243047;
+  background: #fff;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #1599a5;
+  box-shadow: 0 0 0 3px rgba(21, 153, 165, 0.12);
+}
+
+.form-group small {
+  color: #8492a6;
+  font-size: 12px;
+}
+
+.full-width {
+  grid-column: 1 / -1;
+}
+
+/* Generate button */
+.generate-button {
+  display: block;
+  width: 100%;
+  margin-top: 30px;
+  padding: 16px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(100deg, #147d91, #20a4a8);
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.generate-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(20, 125, 145, 0.22);
+}
+
+.generate-button:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+/* Error and loading */
+.error-message {
+  background: #fff0f0;
+  border: 1px solid #ffcaca;
+  color: #b42318;
+  padding: 16px;
+  border-radius: 9px;
+  margin-bottom: 20px;
+  overflow-wrap: anywhere;
+}
+
+.loading-message {
+  text-align: center;
+  color: #147d91;
+  padding: 25px;
+  font-weight: 600;
+}
+
+/* Results overview */
+.summary-card,
+.tips-card {
+  background: #effafa;
+  border: 1px solid #d7f0ef;
+  border-left: 4px solid #1599a5;
+  padding: 24px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  line-height: 1.8;
+}
+
+.summary-card h3,
+.tips-card h3 {
+  color: #176b87;
+  margin-bottom: 12px;
+}
+
+.summary-card p {
+  margin-bottom: 15px;
+}
+
+/* Budget analysis */
+.budget-card {
+  background: #f6f8ff;
+  border: 1px solid #e2e8ff;
+  border-left: 4px solid #6478ce;
+  padding: 24px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  line-height: 1.8;
+}
+
+.budget-card h3 {
+  color: #354b9b;
+  margin-bottom: 12px;
+}
+
+.budget-card p {
+  margin-bottom: 8px;
+}
+
+.budget-card ul,
+.research-card ul {
+  padding-left: 22px;
+  margin-top: 8px;
+}
+
+.budget-card li,
+.research-card li {
+  margin-bottom: 8px;
+  color: #526174;
+}
+
+.budget-status {
+  display: inline-block;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 700;
+  background: #dcfce7;
+  color: #166534;
+}
+
+.budget-status.over-budget {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+/* Research */
+.research-card {
+  background: #fffaf0;
+  border: 1px solid #f6e8c9;
+  border-left: 4px solid #d99a36;
+  padding: 24px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  line-height: 1.8;
+}
+
+.research-card h3 {
+  color: #98651b;
+  margin-bottom: 12px;
+}
+
+.research-card h4 {
+  color: #34445a;
+  margin: 18px 0 8px;
+}
+
+/* Daily itinerary */
+.days-heading {
+  color: #173b5c;
+  margin: 30px 0 20px;
+}
+
+.day-card {
+  border: 1px solid #e1e8ef;
+  border-radius: 13px;
+  padding: 24px;
+  margin-bottom: 20px;
+  background: #fff;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.day-card:hover {
+  box-shadow: 0 7px 22px rgba(20, 45, 70, 0.07);
+  transform: translateY(-2px);
+}
+
+.day-card h3 {
+  color: #176b87;
+  margin-bottom: 8px;
+}
+
+.day-date {
+  color: #8795a8;
+  font-size: 13px;
+  margin-bottom: 18px;
+}
+
+.activity {
+  border-top: 1px solid #edf0f4;
+  padding: 18px 0;
+  line-height: 1.7;
+}
+
+.activity h4 {
+  color: #263f59;
+  margin-bottom: 7px;
+  font-size: 16px;
+}
+
+.activity p {
+  font-size: 14px;
+  color: #66758a;
+  margin-bottom: 5px;
+}
+
+/* Tips */
+.tips-card ul {
+  padding-left: 22px;
+}
+
+.tips-card li {
+  margin-bottom: 9px;
+  color: #526174;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 27px 15px;
+  color: #8190a3;
+  font-size: 13px;
+  border-top: 1px solid #e8edf3;
+  background: #fff;
+}
+
+/* Responsive */
+@media (max-width: 650px) {
+  .hero {
+    padding: 48px 18px 75px;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  .container {
+    padding: 0 12px;
+  }
+
+  .form-section,
+  .results-section {
+    padding: 23px 17px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .full-width {
+    grid-column: auto;
+  }
+
+  .section-heading h2 {
+    font-size: 22px;
+  }
+
+  .day-card,
+  .summary-card,
+  .tips-card,
+  .research-card,
+  .budget-card {
+    padding: 18px;
+  }
+}
