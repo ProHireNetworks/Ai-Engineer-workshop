@@ -1,0 +1,2092 @@
+[
+  {
+    "id": "tc_001_domestic_heritage",
+    "name": "Domestic Heritage - Jaipur, India",
+    "category": "domestic_heritage",
+    "request": {
+      "destination": "Jaipur, India",
+      "days": 3,
+      "budget": 25000,
+      "currency": "INR",
+      "travelers": 2,
+      "interests": [
+        "forts",
+        "palaces",
+        "culture"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_002_domestic_heritage",
+    "name": "Domestic Heritage - Udaipur, India",
+    "category": "domestic_heritage",
+    "request": {
+      "destination": "Udaipur, India",
+      "days": 4,
+      "budget": 35000,
+      "currency": "INR",
+      "travelers": 2,
+      "interests": [
+        "lakes",
+        "royal architecture",
+        "dining"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_003_domestic_heritage",
+    "name": "Domestic Heritage - Agra, India",
+    "category": "domestic_heritage",
+    "request": {
+      "destination": "Agra, India",
+      "days": 2,
+      "budget": 18000,
+      "currency": "INR",
+      "travelers": 2,
+      "interests": [
+        "Taj Mahal",
+        "monuments",
+        "mughal history"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_004_domestic_heritage",
+    "name": "Domestic Heritage - Varanasi, India",
+    "category": "domestic_heritage",
+    "request": {
+      "destination": "Varanasi, India",
+      "days": 3,
+      "budget": 20000,
+      "currency": "INR",
+      "travelers": 1,
+      "interests": [
+        "ghats",
+        "spirituality",
+        "silk weaving"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_005_domestic_heritage",
+    "name": "Domestic Heritage - Hampi, India",
+    "category": "domestic_heritage",
+    "request": {
+      "destination": "Hampi, India",
+      "days": 3,
+      "budget": 22000,
+      "currency": "INR",
+      "travelers": 2,
+      "interests": [
+        "ruins",
+        "bouldering",
+        "temples"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_006_domestic_heritage",
+    "name": "Domestic Heritage - Mysore, India",
+    "category": "domestic_heritage",
+    "request": {
+      "destination": "Mysore, India",
+      "days": 3,
+      "budget": 24000,
+      "currency": "INR",
+      "travelers": 2,
+      "interests": [
+        "palaces",
+        "silk",
+        "gardens"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_007_domestic_heritage",
+    "name": "Domestic Heritage - Khajuraho, India",
+    "category": "domestic_heritage",
+    "request": {
+      "destination": "Khajuraho, India",
+      "days": 2,
+      "budget": 16000,
+      "currency": "INR",
+      "travelers": 2,
+      "interests": [
+        "temple art",
+        "sculptures",
+        "heritage"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_008_domestic_heritage",
+    "name": "Domestic Heritage - Amritsar, India",
+    "category": "domestic_heritage",
+    "request": {
+      "destination": "Amritsar, India",
+      "days": 2,
+      "budget": 18000,
+      "currency": "INR",
+      "travelers": 2,
+      "interests": [
+        "Golden Temple",
+        "street food",
+        "patriotism"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_009_domestic_heritage",
+    "name": "Domestic Heritage - Jodhpur, India",
+    "category": "domestic_heritage",
+    "request": {
+      "destination": "Jodhpur, India",
+      "days": 3,
+      "budget": 26000,
+      "currency": "INR",
+      "travelers": 2,
+      "interests": [
+        "blue city",
+        "Mehrangarh",
+        "handicrafts"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_010_domestic_heritage",
+    "name": "Domestic Heritage - Jaisalmer, India",
+    "category": "domestic_heritage",
+    "request": {
+      "destination": "Jaisalmer, India",
+      "days": 3,
+      "budget": 30000,
+      "currency": "INR",
+      "travelers": 2,
+      "interests": [
+        "desert safari",
+        "dunes",
+        "fort"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_011_domestic_heritage",
+    "name": "Domestic Heritage - Madurai, India",
+    "category": "domestic_heritage",
+    "request": {
+      "destination": "Madurai, India",
+      "days": 2,
+      "budget": 15000,
+      "currency": "INR",
+      "travelers": 2,
+      "interests": [
+        "Meenakshi temple",
+        "tamil culture",
+        "food"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_012_domestic_heritage",
+    "name": "Domestic Heritage - Tanjore, India",
+    "category": "domestic_heritage",
+    "request": {
+      "destination": "Tanjore, India",
+      "days": 2,
+      "budget": 16000,
+      "currency": "INR",
+      "travelers": 1,
+      "interests": [
+        "Brihadisvara",
+        "chola bronzes",
+        "heritage"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_013_domestic_heritage",
+    "name": "Domestic Heritage - Bhubaneswar, India",
+    "category": "domestic_heritage",
+    "request": {
+      "destination": "Bhubaneswar, India",
+      "days": 3,
+      "budget": 20000,
+      "currency": "INR",
+      "travelers": 2,
+      "interests": [
+        "temples",
+        "caves",
+        "odissi art"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_014_domestic_heritage",
+    "name": "Domestic Heritage - Puri, India",
+    "category": "domestic_heritage",
+    "request": {
+      "destination": "Puri, India",
+      "days": 3,
+      "budget": 22000,
+      "currency": "INR",
+      "travelers": 3,
+      "interests": [
+        "Jagannath temple",
+        "beaches",
+        "artisans"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_015_domestic_heritage",
+    "name": "Domestic Heritage - Lucknow, India",
+    "category": "domestic_heritage",
+    "request": {
+      "destination": "Lucknow, India",
+      "days": 2,
+      "budget": 18000,
+      "currency": "INR",
+      "travelers": 2,
+      "interests": [
+        "awadhi cuisine",
+        "imambara",
+        "chikan embroidery"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_016_domestic_coastal",
+    "name": "Domestic Coastal - Goa, India",
+    "category": "domestic_coastal",
+    "request": {
+      "destination": "Goa, India",
+      "days": 4,
+      "budget": 32000,
+      "currency": "INR",
+      "travelers": 2,
+      "interests": [
+        "beaches",
+        "shacks",
+        "water sports"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_017_domestic_coastal",
+    "name": "Domestic Coastal - South Goa, India",
+    "category": "domestic_coastal",
+    "request": {
+      "destination": "South Goa, India",
+      "days": 4,
+      "budget": 40000,
+      "currency": "INR",
+      "travelers": 2,
+      "interests": [
+        "quiet beaches",
+        "luxury resorts",
+        "nature"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_018_domestic_coastal",
+    "name": "Domestic Coastal - Alleppey, India",
+    "category": "domestic_coastal",
+    "request": {
+      "destination": "Alleppey, India",
+      "days": 3,
+      "budget": 30000,
+      "currency": "INR",
+      "travelers": 2,
+      "interests": [
+        "houseboats",
+        "backwaters",
+        "seafood"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_019_domestic_coastal",
+    "name": "Domestic Coastal - Kovalam, India",
+    "category": "domestic_coastal",
+    "request": {
+      "destination": "Kovalam, India",
+      "days": 3,
+      "budget": 25000,
+      "currency": "INR",
+      "travelers": 2,
+      "interests": [
+        "lighthouse beach",
+        "ayurveda",
+        "seafood"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_020_domestic_coastal",
+    "name": "Domestic Coastal - Pondicherry, India",
+    "category": "domestic_coastal",
+    "request": {
+      "destination": "Pondicherry, India",
+      "days": 3,
+      "budget": 24000,
+      "currency": "INR",
+      "travelers": 2,
+      "interests": [
+        "french colony",
+        "promenade",
+        "cafes"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_021_domestic_coastal",
+    "name": "Domestic Coastal - Gokarna, India",
+    "category": "domestic_coastal",
+    "request": {
+      "destination": "Gokarna, India",
+      "days": 3,
+      "budget": 18000,
+      "currency": "INR",
+      "travelers": 1,
+      "interests": [
+        "trekking",
+        "om beach",
+        "tranquility"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_022_domestic_coastal",
+    "name": "Domestic Coastal - Varkala, India",
+    "category": "domestic_coastal",
+    "request": {
+      "destination": "Varkala, India",
+      "days": 3,
+      "budget": 20000,
+      "currency": "INR",
+      "travelers": 2,
+      "interests": [
+        "cliff views",
+        "surfing",
+        "sunset"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_023_domestic_coastal",
+    "name": "Domestic Coastal - Andaman, India",
+    "category": "domestic_coastal",
+    "request": {
+      "destination": "Andaman, India",
+      "days": 5,
+      "budget": 60000,
+      "currency": "INR",
+      "travelers": 2,
+      "interests": [
+        "scuba diving",
+        "radhanagar beach",
+        "cellular jail"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_024_domestic_coastal",
+    "name": "Domestic Coastal - Diu, India",
+    "category": "domestic_coastal",
+    "request": {
+      "destination": "Diu, India",
+      "days": 2,
+      "budget": 15000,
+      "currency": "INR",
+      "travelers": 2,
+      "interests": [
+        "portuguese fort",
+        "beaches",
+        "relaxation"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_025_domestic_coastal",
+    "name": "Domestic Coastal - Mangalore, India",
+    "category": "domestic_coastal",
+    "request": {
+      "destination": "Mangalore, India",
+      "days": 2,
+      "budget": 16000,
+      "currency": "INR",
+      "travelers": 2,
+      "interests": [
+        "coastal cuisine",
+        "panambur beach",
+        "temples"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_026_domestic_coastal",
+    "name": "Domestic Coastal - Kochi, India",
+    "category": "domestic_coastal",
+    "request": {
+      "destination": "Kochi, India",
+      "days": 3,
+      "budget": 26000,
+      "currency": "INR",
+      "travelers": 2,
+      "interests": [
+        "chinese nets",
+        "jew town",
+        "kathakali"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_027_domestic_coastal",
+    "name": "Domestic Coastal - Alibaug, India",
+    "category": "domestic_coastal",
+    "request": {
+      "destination": "Alibaug, India",
+      "days": 2,
+      "budget": 18000,
+      "currency": "INR",
+      "travelers": 2,
+      "interests": [
+        "coastal fort",
+        "weekend getaway",
+        "water sports"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_028_domestic_mountain",
+    "name": "Domestic Mountain - Manali, India",
+    "category": "domestic_mountain",
+    "request": {
+      "destination": "Manali, India",
+      "days": 4,
+      "budget": 30000,
+      "currency": "INR",
+      "travelers": 2,
+      "interests": [
+        "snow",
+        "solang valley",
+        "hiking"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_029_domestic_mountain",
+    "name": "Domestic Mountain - Shimla, India",
+    "category": "domestic_mountain",
+    "request": {
+      "destination": "Shimla, India",
+      "days": 3,
+      "budget": 25000,
+      "currency": "INR",
+      "travelers": 2,
+      "interests": [
+        "toy train",
+        "mall road",
+        "colonial vistas"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_030_domestic_mountain",
+    "name": "Domestic Mountain - Munnar, India",
+    "category": "domestic_mountain",
+    "request": {
+      "destination": "Munnar, India",
+      "days": 3,
+      "budget": 28000,
+      "currency": "INR",
+      "travelers": 2,
+      "interests": [
+        "tea estates",
+        "eravikulam",
+        "mist"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_031_domestic_mountain",
+    "name": "Domestic Mountain - Ooty, India",
+    "category": "domestic_mountain",
+    "request": {
+      "destination": "Ooty, India",
+      "days": 3,
+      "budget": 26000,
+      "currency": "INR",
+      "travelers": 2,
+      "interests": [
+        "botanical gardens",
+        "nilgiri train",
+        "lakes"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_032_domestic_mountain",
+    "name": "Domestic Mountain - Darjeeling, India",
+    "category": "domestic_mountain",
+    "request": {
+      "destination": "Darjeeling, India",
+      "days": 3,
+      "budget": 28000,
+      "currency": "INR",
+      "travelers": 2,
+      "interests": [
+        "tiger hill",
+        "tea gardens",
+        "kanchendzonga"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_033_domestic_mountain",
+    "name": "Domestic Mountain - Gangtok, India",
+    "category": "domestic_mountain",
+    "request": {
+      "destination": "Gangtok, India",
+      "days": 4,
+      "budget": 38000,
+      "currency": "INR",
+      "travelers": 2,
+      "interests": [
+        "monasteries",
+        "tsomgo lake",
+        "himalayas"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_034_domestic_mountain",
+    "name": "Domestic Mountain - Leh Ladakh, India",
+    "category": "domestic_mountain",
+    "request": {
+      "destination": "Leh Ladakh, India",
+      "days": 6,
+      "budget": 65000,
+      "currency": "INR",
+      "travelers": 2,
+      "interests": [
+        "pangong lake",
+        "passes",
+        "monasteries"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_035_domestic_mountain",
+    "name": "Domestic Mountain - Rishikesh, India",
+    "category": "domestic_mountain",
+    "request": {
+      "destination": "Rishikesh, India",
+      "days": 3,
+      "budget": 18000,
+      "currency": "INR",
+      "travelers": 2,
+      "interests": [
+        "river rafting",
+        "yoga",
+        "ganga aarti"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_036_domestic_mountain",
+    "name": "Domestic Mountain - Kodaikanal, India",
+    "category": "domestic_mountain",
+    "request": {
+      "destination": "Kodaikanal, India",
+      "days": 3,
+      "budget": 24000,
+      "currency": "INR",
+      "travelers": 2,
+      "interests": [
+        "pillar rocks",
+        "lake",
+        "homemade chocolate"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_037_domestic_mountain",
+    "name": "Domestic Mountain - Coorg, India",
+    "category": "domestic_mountain",
+    "request": {
+      "destination": "Coorg, India",
+      "days": 3,
+      "budget": 26000,
+      "currency": "INR",
+      "travelers": 2,
+      "interests": [
+        "coffee plantations",
+        "waterfalls",
+        "abbey falls"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_038_domestic_mountain",
+    "name": "Domestic Mountain - Wayanad, India",
+    "category": "domestic_mountain",
+    "request": {
+      "destination": "Wayanad, India",
+      "days": 3,
+      "budget": 25000,
+      "currency": "INR",
+      "travelers": 2,
+      "interests": [
+        "caves",
+        "wildlife",
+        "tree houses"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_039_domestic_mountain",
+    "name": "Domestic Mountain - Nainital, India",
+    "category": "domestic_mountain",
+    "request": {
+      "destination": "Nainital, India",
+      "days": 3,
+      "budget": 22000,
+      "currency": "INR",
+      "travelers": 2,
+      "interests": [
+        "naini lake",
+        "boating",
+        "viewpoints"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_040_domestic_mountain",
+    "name": "Domestic Mountain - Mussoorie, India",
+    "category": "domestic_mountain",
+    "request": {
+      "destination": "Mussoorie, India",
+      "days": 3,
+      "budget": 24000,
+      "currency": "INR",
+      "travelers": 2,
+      "interests": [
+        "kempty falls",
+        "gun hill",
+        "views"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_041_domestic_mountain",
+    "name": "Domestic Mountain - Shillong, India",
+    "category": "domestic_mountain",
+    "request": {
+      "destination": "Shillong, India",
+      "days": 4,
+      "budget": 36000,
+      "currency": "INR",
+      "travelers": 2,
+      "interests": [
+        "living root bridges",
+        "waterfalls",
+        "rock music"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_042_domestic_mountain",
+    "name": "Domestic Mountain - Kasol, India",
+    "category": "domestic_mountain",
+    "request": {
+      "destination": "Kasol, India",
+      "days": 3,
+      "budget": 16000,
+      "currency": "INR",
+      "travelers": 1,
+      "interests": [
+        "parvati valley",
+        "trekking",
+        "cafes"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_043_international_city",
+    "name": "International City - Paris, France",
+    "category": "international_city",
+    "request": {
+      "destination": "Paris, France",
+      "days": 5,
+      "budget": 2500,
+      "currency": "EUR",
+      "travelers": 2,
+      "interests": [
+        "Eiffel Tower",
+        "Louvre",
+        "cafes",
+        "art"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_044_international_city",
+    "name": "International City - Rome, Italy",
+    "category": "international_city",
+    "request": {
+      "destination": "Rome, Italy",
+      "days": 4,
+      "budget": 2000,
+      "currency": "EUR",
+      "travelers": 2,
+      "interests": [
+        "Colosseum",
+        "Vatican",
+        "pasta",
+        "history"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_045_international_city",
+    "name": "International City - London, UK",
+    "category": "international_city",
+    "request": {
+      "destination": "London, UK",
+      "days": 5,
+      "budget": 2600,
+      "currency": "GBP",
+      "travelers": 2,
+      "interests": [
+        "museums",
+        "theatre",
+        "Big Ben",
+        "palaces"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_046_international_city",
+    "name": "International City - Tokyo, Japan",
+    "category": "international_city",
+    "request": {
+      "destination": "Tokyo, Japan",
+      "days": 6,
+      "budget": 3200,
+      "currency": "USD",
+      "travelers": 2,
+      "interests": [
+        "temples",
+        "sushi",
+        "Shibuya",
+        "anime"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_047_international_city",
+    "name": "International City - Kyoto, Japan",
+    "category": "international_city",
+    "request": {
+      "destination": "Kyoto, Japan",
+      "days": 4,
+      "budget": 2200,
+      "currency": "USD",
+      "travelers": 2,
+      "interests": [
+        "Fushimi Inari",
+        "bamboo grove",
+        "zen gardens"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_048_international_city",
+    "name": "International City - New York, USA",
+    "category": "international_city",
+    "request": {
+      "destination": "New York, USA",
+      "days": 5,
+      "budget": 3500,
+      "currency": "USD",
+      "travelers": 2,
+      "interests": [
+        "Broadway",
+        "Central Park",
+        "Metropolitan Museum"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_049_international_city",
+    "name": "International City - Dubai, UAE",
+    "category": "international_city",
+    "request": {
+      "destination": "Dubai, UAE",
+      "days": 4,
+      "budget": 2400,
+      "currency": "USD",
+      "travelers": 2,
+      "interests": [
+        "Burj Khalifa",
+        "desert safari",
+        "shopping"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_050_international_city",
+    "name": "International City - Singapore",
+    "category": "international_city",
+    "request": {
+      "destination": "Singapore",
+      "days": 4,
+      "budget": 2200,
+      "currency": "USD",
+      "travelers": 2,
+      "interests": [
+        "Gardens by the Bay",
+        "Marina Bay",
+        "street food"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_051_international_city",
+    "name": "International City - Bangkok, Thailand",
+    "category": "international_city",
+    "request": {
+      "destination": "Bangkok, Thailand",
+      "days": 4,
+      "budget": 1500,
+      "currency": "USD",
+      "travelers": 2,
+      "interests": [
+        "Grand Palace",
+        "floating markets",
+        "street food"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_052_international_city",
+    "name": "International City - Barcelona, Spain",
+    "category": "international_city",
+    "request": {
+      "destination": "Barcelona, Spain",
+      "days": 4,
+      "budget": 2100,
+      "currency": "EUR",
+      "travelers": 2,
+      "interests": [
+        "Sagrada Familia",
+        "tapas",
+        "beaches"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_053_international_city",
+    "name": "International City - Amsterdam, Netherlands",
+    "category": "international_city",
+    "request": {
+      "destination": "Amsterdam, Netherlands",
+      "days": 4,
+      "budget": 2200,
+      "currency": "EUR",
+      "travelers": 2,
+      "interests": [
+        "canals",
+        "Rijksmuseum",
+        "bicycles"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_054_international_city",
+    "name": "International City - Vienna, Austria",
+    "category": "international_city",
+    "request": {
+      "destination": "Vienna, Austria",
+      "days": 3,
+      "budget": 1600,
+      "currency": "EUR",
+      "travelers": 2,
+      "interests": [
+        "classical music",
+        "palaces",
+        "coffee houses"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_055_international_city",
+    "name": "International City - Prague, Czech Republic",
+    "category": "international_city",
+    "request": {
+      "destination": "Prague, Czech Republic",
+      "days": 3,
+      "budget": 1400,
+      "currency": "EUR",
+      "travelers": 2,
+      "interests": [
+        "Charles Bridge",
+        "Old Town",
+        "castles"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_056_international_city",
+    "name": "International City - Berlin, Germany",
+    "category": "international_city",
+    "request": {
+      "destination": "Berlin, Germany",
+      "days": 4,
+      "budget": 1800,
+      "currency": "EUR",
+      "travelers": 2,
+      "interests": [
+        "history",
+        "techno",
+        "museum island"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_057_international_city",
+    "name": "International City - Istanbul, Turkey",
+    "category": "international_city",
+    "request": {
+      "destination": "Istanbul, Turkey",
+      "days": 4,
+      "budget": 1600,
+      "currency": "USD",
+      "travelers": 2,
+      "interests": [
+        "Hagia Sophia",
+        "bazaars",
+        "Bosphorus cruise"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_058_international_city",
+    "name": "International City - Cairo, Egypt",
+    "category": "international_city",
+    "request": {
+      "destination": "Cairo, Egypt",
+      "days": 4,
+      "budget": 1500,
+      "currency": "USD",
+      "travelers": 2,
+      "interests": [
+        "Pyramids of Giza",
+        "Nile cruise",
+        "antiquities"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_059_international_city",
+    "name": "International City - Sydney, Australia",
+    "category": "international_city",
+    "request": {
+      "destination": "Sydney, Australia",
+      "days": 5,
+      "budget": 3000,
+      "currency": "USD",
+      "travelers": 2,
+      "interests": [
+        "Opera House",
+        "Bondi Beach",
+        "harbour cruise"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_060_international_city",
+    "name": "International City - Seoul, South Korea",
+    "category": "international_city",
+    "request": {
+      "destination": "Seoul, South Korea",
+      "days": 5,
+      "budget": 2400,
+      "currency": "USD",
+      "travelers": 2,
+      "interests": [
+        "palaces",
+        "k-pop",
+        "korean bbq",
+        "night markets"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_061_international_city",
+    "name": "International City - Hong Kong",
+    "category": "international_city",
+    "request": {
+      "destination": "Hong Kong",
+      "days": 4,
+      "budget": 2300,
+      "currency": "USD",
+      "travelers": 2,
+      "interests": [
+        "Victoria Peak",
+        "dim sum",
+        "harbour skyline"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_062_international_city",
+    "name": "International City - Athens, Greece",
+    "category": "international_city",
+    "request": {
+      "destination": "Athens, Greece",
+      "days": 3,
+      "budget": 1500,
+      "currency": "EUR",
+      "travelers": 2,
+      "interests": [
+        "Acropolis",
+        "ancient history",
+        "greek food"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_063_international_resort",
+    "name": "International Resort - Bali, Indonesia",
+    "category": "international_resort",
+    "request": {
+      "destination": "Bali, Indonesia",
+      "days": 5,
+      "budget": 1800,
+      "currency": "USD",
+      "travelers": 2,
+      "interests": [
+        "Ubud rice terraces",
+        "surfing",
+        "temples"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_064_international_resort",
+    "name": "International Resort - Phuket, Thailand",
+    "category": "international_resort",
+    "request": {
+      "destination": "Phuket, Thailand",
+      "days": 4,
+      "budget": 1400,
+      "currency": "USD",
+      "travelers": 2,
+      "interests": [
+        "Phi Phi islands",
+        "beaches",
+        "snorkeling"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_065_international_resort",
+    "name": "International Resort - Maldives",
+    "category": "international_resort",
+    "request": {
+      "destination": "Maldives",
+      "days": 4,
+      "budget": 4500,
+      "currency": "USD",
+      "travelers": 2,
+      "interests": [
+        "overwater villas",
+        "coral reefs",
+        "luxury"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_066_international_resort",
+    "name": "International Resort - Santorini, Greece",
+    "category": "international_resort",
+    "request": {
+      "destination": "Santorini, Greece",
+      "days": 4,
+      "budget": 2800,
+      "currency": "EUR",
+      "travelers": 2,
+      "interests": [
+        "caldera views",
+        "whitewashed houses",
+        "sunsets"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_067_international_resort",
+    "name": "International Resort - Mauritius",
+    "category": "international_resort",
+    "request": {
+      "destination": "Mauritius",
+      "days": 5,
+      "budget": 3200,
+      "currency": "USD",
+      "travelers": 2,
+      "interests": [
+        "lagoon beaches",
+        "hiking",
+        "botanical gardens"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_068_international_resort",
+    "name": "International Resort - Seychelles",
+    "category": "international_resort",
+    "request": {
+      "destination": "Seychelles",
+      "days": 5,
+      "budget": 4200,
+      "currency": "USD",
+      "travelers": 2,
+      "interests": [
+        "granite boulders",
+        "beaches",
+        "giant tortoises"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_069_international_resort",
+    "name": "International Resort - Zanzibar, Tanzania",
+    "category": "international_resort",
+    "request": {
+      "destination": "Zanzibar, Tanzania",
+      "days": 4,
+      "budget": 2000,
+      "currency": "USD",
+      "travelers": 2,
+      "interests": [
+        "Stone Town",
+        "spice tours",
+        "white sands"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_070_international_resort",
+    "name": "International Resort - Fiji",
+    "category": "international_resort",
+    "request": {
+      "destination": "Fiji",
+      "days": 6,
+      "budget": 4000,
+      "currency": "USD",
+      "travelers": 2,
+      "interests": [
+        "islands",
+        "snorkeling",
+        "pacific culture"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_071_international_resort",
+    "name": "International Resort - Bora Bora, French Polynesia",
+    "category": "international_resort",
+    "request": {
+      "destination": "Bora Bora, French Polynesia",
+      "days": 5,
+      "budget": 7500,
+      "currency": "USD",
+      "travelers": 2,
+      "interests": [
+        "luxury overwater",
+        "lagoon",
+        "diving"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_072_international_resort",
+    "name": "International Resort - Hawaii, USA",
+    "category": "international_resort",
+    "request": {
+      "destination": "Hawaii, USA",
+      "days": 6,
+      "budget": 4500,
+      "currency": "USD",
+      "travelers": 2,
+      "interests": [
+        "volcanoes",
+        "surfing",
+        "waikiki",
+        "luaus"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_073_family_group",
+    "name": "Family Group - Singapore",
+    "category": "family_group",
+    "request": {
+      "destination": "Singapore",
+      "days": 5,
+      "budget": 3500,
+      "currency": "USD",
+      "travelers": 4,
+      "interests": [
+        "Universal Studios",
+        "Zoo",
+        "Night Safari"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_074_family_group",
+    "name": "Family Group - Orlando, USA",
+    "category": "family_group",
+    "request": {
+      "destination": "Orlando, USA",
+      "days": 6,
+      "budget": 5000,
+      "currency": "USD",
+      "travelers": 4,
+      "interests": [
+        "Disney World",
+        "Universal",
+        "space center"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_075_family_group",
+    "name": "Family Group - Jaipur, India",
+    "category": "family_group",
+    "request": {
+      "destination": "Jaipur, India",
+      "days": 4,
+      "budget": 45000,
+      "currency": "INR",
+      "travelers": 4,
+      "interests": [
+        "elephant sanctuary",
+        "family dining",
+        "forts"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_076_family_group",
+    "name": "Family Group - Goa, India",
+    "category": "family_group",
+    "request": {
+      "destination": "Goa, India",
+      "days": 5,
+      "budget": 55000,
+      "currency": "INR",
+      "travelers": 5,
+      "interests": [
+        "family villa",
+        "dudhsagar falls",
+        "dolphin trips"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_077_family_group",
+    "name": "Family Group - Tokyo, Japan",
+    "category": "family_group",
+    "request": {
+      "destination": "Tokyo, Japan",
+      "days": 6,
+      "budget": 5200,
+      "currency": "USD",
+      "travelers": 4,
+      "interests": [
+        "Disneyland",
+        "Ghibli museum",
+        "robot show"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_078_family_group",
+    "name": "Family Group - London, UK",
+    "category": "family_group",
+    "request": {
+      "destination": "London, UK",
+      "days": 5,
+      "budget": 4200,
+      "currency": "GBP",
+      "travelers": 4,
+      "interests": [
+        "Harry Potter studio",
+        "science museum",
+        "parks"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_079_family_group",
+    "name": "Family Group - Kerala, India",
+    "category": "family_group",
+    "request": {
+      "destination": "Kerala, India",
+      "days": 5,
+      "budget": 60000,
+      "currency": "INR",
+      "travelers": 4,
+      "interests": [
+        "backwaters",
+        "spice gardens",
+        "elephant training"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_080_family_group",
+    "name": "Family Group - Dubai, UAE",
+    "category": "family_group",
+    "request": {
+      "destination": "Dubai, UAE",
+      "days": 4,
+      "budget": 3800,
+      "currency": "USD",
+      "travelers": 4,
+      "interests": [
+        "aquarium",
+        "theme parks",
+        "miracle garden"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_081_family_group",
+    "name": "Family Group - Sydney, Australia",
+    "category": "family_group",
+    "request": {
+      "destination": "Sydney, Australia",
+      "days": 6,
+      "budget": 5500,
+      "currency": "USD",
+      "travelers": 4,
+      "interests": [
+        "taronga zoo",
+        "aquarium",
+        "manly beach"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_082_family_group",
+    "name": "Family Group - Paris, France",
+    "category": "family_group",
+    "request": {
+      "destination": "Paris, France",
+      "days": 5,
+      "budget": 4200,
+      "currency": "EUR",
+      "travelers": 4,
+      "interests": [
+        "Disneyland Paris",
+        "river cruise",
+        "eiffel"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_083_solo_budget",
+    "name": "Solo Budget - Varanasi, India",
+    "category": "solo_budget",
+    "request": {
+      "destination": "Varanasi, India",
+      "days": 3,
+      "budget": 8000,
+      "currency": "INR",
+      "travelers": 1,
+      "interests": [
+        "hostels",
+        "walking tours",
+        "spirituality"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_084_solo_budget",
+    "name": "Solo Budget - Rishikesh, India",
+    "category": "solo_budget",
+    "request": {
+      "destination": "Rishikesh, India",
+      "days": 4,
+      "budget": 9000,
+      "currency": "INR",
+      "travelers": 1,
+      "interests": [
+        "yoga retreats",
+        "hiking",
+        "hostel life"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_085_solo_budget",
+    "name": "Solo Budget - Pushkar, India",
+    "category": "solo_budget",
+    "request": {
+      "destination": "Pushkar, India",
+      "days": 2,
+      "budget": 6000,
+      "currency": "INR",
+      "travelers": 1,
+      "interests": [
+        "camel fair",
+        "sacred lake",
+        "rooftop cafes"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_086_solo_budget",
+    "name": "Solo Budget - Kasol, India",
+    "category": "solo_budget",
+    "request": {
+      "destination": "Kasol, India",
+      "days": 4,
+      "budget": 8500,
+      "currency": "INR",
+      "travelers": 1,
+      "interests": [
+        "kheerganga trek",
+        "budget cafes",
+        "nature"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_087_solo_budget",
+    "name": "Solo Budget - Hampi, India",
+    "category": "solo_budget",
+    "request": {
+      "destination": "Hampi, India",
+      "days": 3,
+      "budget": 7500,
+      "currency": "INR",
+      "travelers": 1,
+      "interests": [
+        "bicycles",
+        "guesthouses",
+        "boulders"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_088_solo_budget",
+    "name": "Solo Budget - Bangkok, Thailand",
+    "category": "solo_budget",
+    "request": {
+      "destination": "Bangkok, Thailand",
+      "days": 4,
+      "budget": 600,
+      "currency": "USD",
+      "travelers": 1,
+      "interests": [
+        "khao san road",
+        "hostels",
+        "street food"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_089_solo_budget",
+    "name": "Solo Budget - Hanoi, Vietnam",
+    "category": "solo_budget",
+    "request": {
+      "destination": "Hanoi, Vietnam",
+      "days": 5,
+      "budget": 550,
+      "currency": "USD",
+      "travelers": 1,
+      "interests": [
+        "old quarter",
+        "halong bay",
+        "egg coffee"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_090_solo_budget",
+    "name": "Solo Budget - Siem Reap, Cambodia",
+    "category": "solo_budget",
+    "request": {
+      "destination": "Siem Reap, Cambodia",
+      "days": 3,
+      "budget": 450,
+      "currency": "USD",
+      "travelers": 1,
+      "interests": [
+        "Angkor Wat",
+        "tuk tuks",
+        "budget stays"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_091_solo_budget",
+    "name": "Solo Budget - Kathmandu, Nepal",
+    "category": "solo_budget",
+    "request": {
+      "destination": "Kathmandu, Nepal",
+      "days": 4,
+      "budget": 500,
+      "currency": "USD",
+      "travelers": 1,
+      "interests": [
+        "Thamel",
+        "boudhanath",
+        "hiking"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_092_solo_budget",
+    "name": "Solo Budget - Pokhara, Nepal",
+    "category": "solo_budget",
+    "request": {
+      "destination": "Pokhara, Nepal",
+      "days": 4,
+      "budget": 500,
+      "currency": "USD",
+      "travelers": 1,
+      "interests": [
+        "Phewa lake",
+        "annapurna views",
+        "peace pagoda"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_093_wildlife_nature",
+    "name": "Wildlife Nature - Ranthambore, India",
+    "category": "wildlife_nature",
+    "request": {
+      "destination": "Ranthambore, India",
+      "days": 3,
+      "budget": 28000,
+      "currency": "INR",
+      "travelers": 2,
+      "interests": [
+        "tiger safari",
+        "fort",
+        "wildlife"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_094_wildlife_nature",
+    "name": "Wildlife Nature - Kaziranga, India",
+    "category": "wildlife_nature",
+    "request": {
+      "destination": "Kaziranga, India",
+      "days": 3,
+      "budget": 30000,
+      "currency": "INR",
+      "travelers": 2,
+      "interests": [
+        "one-horned rhino",
+        "jeep safari",
+        "tea"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_095_wildlife_nature",
+    "name": "Wildlife Nature - Jim Corbett, India",
+    "category": "wildlife_nature",
+    "request": {
+      "destination": "Jim Corbett, India",
+      "days": 3,
+      "budget": 24000,
+      "currency": "INR",
+      "travelers": 2,
+      "interests": [
+        "jungle safari",
+        "dhikala",
+        "bird watching"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_096_wildlife_nature",
+    "name": "Wildlife Nature - Serengeti, Tanzania",
+    "category": "wildlife_nature",
+    "request": {
+      "destination": "Serengeti, Tanzania",
+      "days": 5,
+      "budget": 3800,
+      "currency": "USD",
+      "travelers": 2,
+      "interests": [
+        "great migration",
+        "game drives",
+        "safari"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_097_international_mountain",
+    "name": "International Mountain - Interlaken, Switzerland",
+    "category": "international_mountain",
+    "request": {
+      "destination": "Interlaken, Switzerland",
+      "days": 4,
+      "budget": 2800,
+      "currency": "EUR",
+      "travelers": 2,
+      "interests": [
+        "jungfraujoch",
+        "alpine trains",
+        "lakes"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_098_edge_case_minimal_days",
+    "name": "Edge Case Minimal Days - Jaipur",
+    "category": "edge_case_minimal_days",
+    "request": {
+      "destination": "Jaipur",
+      "days": 1,
+      "budget": 10000,
+      "currency": "INR",
+      "travelers": 1,
+      "interests": [
+        "express tour"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_099_edge_case_long_stay",
+    "name": "Edge Case Long Stay - Goa",
+    "category": "edge_case_long_stay",
+    "request": {
+      "destination": "Goa",
+      "days": 14,
+      "budget": 120000,
+      "currency": "INR",
+      "travelers": 2,
+      "interests": [
+        "workation",
+        "relaxation"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_100_edge_case_high_budget_solo",
+    "name": "Edge Case High Budget Solo - Mumbai",
+    "category": "edge_case_high_budget_solo",
+    "request": {
+      "destination": "Mumbai",
+      "days": 3,
+      "budget": 50000,
+      "currency": "INR",
+      "travelers": 1,
+      "interests": [
+        "business travel",
+        "heritage"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_101_edge_case_large_group",
+    "name": "Edge Case Large Group - Delhi",
+    "category": "edge_case_large_group",
+    "request": {
+      "destination": "Delhi",
+      "days": 2,
+      "budget": 12000,
+      "currency": "INR",
+      "travelers": 10,
+      "interests": [
+        "group tour"
+      ]
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_102_edge_case_no_interests",
+    "name": "Edge Case No Interests - Kolkata",
+    "category": "edge_case_no_interests",
+    "request": {
+      "destination": "Kolkata",
+      "days": 3,
+      "budget": 20000,
+      "currency": "INR",
+      "travelers": 2,
+      "interests": []
+    },
+    "expected_status": "success",
+    "min_attractions": 3,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_103_edge_case_invalid_days_zero",
+    "name": "Edge Case Invalid Days Zero - Jaipur",
+    "category": "edge_case_invalid_days_zero",
+    "request": {
+      "destination": "Jaipur",
+      "days": 0,
+      "budget": 10000,
+      "currency": "INR",
+      "travelers": 2,
+      "interests": [
+        "tour"
+      ]
+    },
+    "expected_status": "validation_error",
+    "min_attractions": 0,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_104_edge_case_unrealistic_low_budget",
+    "name": "Edge Case Unrealistic Low Budget - Goa",
+    "category": "edge_case_unrealistic_low_budget",
+    "request": {
+      "destination": "Goa",
+      "days": 3,
+      "budget": 0.5,
+      "currency": "INR",
+      "travelers": 2,
+      "interests": [
+        "beach"
+      ]
+    },
+    "expected_status": "validation_error",
+    "min_attractions": 0,
+    "max_budget_variance_pct": 20.0
+  },
+  {
+    "id": "tc_105_edge_case_invalid_currency",
+    "name": "Edge Case Invalid Currency - Kerala",
+    "category": "edge_case_invalid_currency",
+    "request": {
+      "destination": "Kerala",
+      "days": 3,
+      "budget": 25000,
+      "currency": "INVALID_CURR",
+      "travelers": 2,
+      "interests": [
+        "nature"
+      ]
+    },
+    "expected_status": "validation_error",
+    "min_attractions": 0,
+    "max_budget_variance_pct": 20.0
+  }
+]
