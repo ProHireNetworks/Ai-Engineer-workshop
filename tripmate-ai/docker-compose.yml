@@ -1,0 +1,55 @@
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: tripmate-backend
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      - APP_NAME=TripMate AI
+      - APP_ENV=development
+      - DEBUG=true
+      - POSTGRES_SERVER=postgres
+      - POSTGRES_PORT=5432
+      - POSTGRES_USER=tripmate
+      - POSTGRES_PASSWORD=tripmate_password
+      - POSTGRES_DB=tripmate_db
+      - DATABASE_URL=postgresql+asyncpg://tripmate:tripmate_password@postgres:5432/tripmate_db
+      - LLM_PROVIDER=mock
+      - LOG_LEVEL=INFO
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks:
+      - tripmate-network
+
+  postgres:
+    image: pgvector/pgvector:pg16
+    container_name: tripmate-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: tripmate
+      POSTGRES_PASSWORD: tripmate_password
+      POSTGRES_DB: tripmate_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U tripmate -d tripmate_db"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - tripmate-network
+
+volumes:
+  postgres_data:
+    driver: local
+
+networks:
+  tripmate-network:
+    driver: bridge
+

@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TripMate AI</title>
+  <style>
+    :root { --ink:#172038; --muted:#68718a; --line:#e7e9f2; --accent:#635bff; --accent2:#17b897; --paper:#fff; --bg:#f5f7fb; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:Inter,Segoe UI,Arial,sans-serif; color:var(--ink); background:linear-gradient(135deg,#f7f8fd 0%,#eef3fb 100%); }
+    .shell { min-height:100vh; }
+    header { height:72px; display:flex; align-items:center; justify-content:space-between; padding:0 36px; background:rgba(255,255,255,.92); border-bottom:1px solid var(--line); }
+    .brand { display:flex; align-items:center; gap:12px; font-weight:800; font-size:20px; }
+    .brand-mark { width:38px; height:38px; border-radius:12px; display:grid; place-items:center; color:white; background:linear-gradient(135deg,var(--accent),#948cff); }
+    .header-actions { display:flex; align-items:center; gap:12px; }
+    .status-pill { border:1px solid var(--line); border-radius:999px; padding:8px 12px; font-size:13px; color:var(--muted); background:white; }
+    .status-dot { display:inline-block; width:8px; height:8px; border-radius:50%; background:#20b486; margin-right:7px; }
+    main { max-width:1180px; margin:0 auto; padding:34px 24px 48px; }
+    .hero { display:flex; justify-content:space-between; align-items:end; margin-bottom:24px; }
+    h1 { margin:0 0 7px; font-size:34px; letter-spacing:-1px; }
+    .hero p { margin:0; color:var(--muted); }
+    .grid { display:grid; grid-template-columns:minmax(320px,390px) minmax(0,1fr); gap:22px; }
+    .card { background:var(--paper); border:1px solid var(--line); border-radius:18px; box-shadow:0 12px 30px rgba(30,42,90,.06); }
+    .panel { padding:24px; }
+    .panel h2 { margin:0 0 18px; font-size:18px; }
+    label { display:block; margin:14px 0 7px; font-size:13px; font-weight:700; }
+    input, select, textarea { width:100%; border:1px solid #dfe3ef; border-radius:10px; padding:11px 12px; font:inherit; color:var(--ink); background:white; outline:none; }
+    input:focus, select:focus, textarea:focus { border-color:#9892ff; box-shadow:0 0 0 3px rgba(99,91,255,.10); }
+    textarea { min-height:78px; resize:vertical; }
+    .two { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+    .check-row { display:flex; align-items:center; gap:9px; margin-top:16px; }
+    .check-row input { width:auto; }
+    .check-row label { margin:0; font-weight:600; }
+    button { border:0; border-radius:10px; padding:11px 15px; font-weight:750; cursor:pointer; font:inherit; }
+    .primary { width:100%; margin-top:18px; color:white; background:linear-gradient(135deg,var(--accent),#7c74ff); box-shadow:0 8px 18px rgba(99,91,255,.22); }
+    button:disabled { opacity:.55; cursor:not-allowed; }
+    .secondary { color:var(--accent); background:#efefff; }
+    .danger { color:#a73131; background:#ffeded; }
+    .success { color:#08775f; background:#e2f7f1; }
+    .output { min-height:480px; overflow:hidden; }
+    .output-head { display:flex; align-items:center; justify-content:space-between; padding:20px 24px; border-bottom:1px solid var(--line); }
+    .output-head h2 { margin:0; }
+    .empty { min-height:410px; display:grid; place-items:center; text-align:center; color:var(--muted); padding:30px; }
+    .empty-icon { width:62px; height:62px; margin:0 auto 14px; border-radius:18px; display:grid; place-items:center; background:#f0efff; font-size:28px; }
+    .content { padding:22px 24px; }
+    .meta { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:18px; }
+    .tag { border-radius:999px; padding:7px 10px; background:#f2f4f8; color:#596176; font-size:12px; font-weight:700; }
+    .tag.pending { color:#8a6417; background:#fff2c9; }
+    .tag.success { color:#08775f; background:#daf5ec; }
+    .cards { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin-bottom:18px; }
+    .metric { border:1px solid var(--line); border-radius:12px; padding:14px; }
+    .metric span { display:block; color:var(--muted); font-size:12px; margin-bottom:6px; }
+    .metric strong { font-size:18px; }
+    .section { border-top:1px solid var(--line); padding-top:17px; margin-top:17px; }
+    .day { border:1px solid var(--line); border-radius:12px; padding:13px; margin:9px 0; }
+    .day strong { display:block; margin-bottom:7px; }
+    .day ul { margin:0; padding-left:18px; color:#586078; line-height:1.55; }
+    .actions { display:flex; gap:9px; margin-top:18px; }
+    .actions button { flex:1; }
+    .lookup { display:flex; gap:8px; margin-top:12px; }
+    .lookup input { flex:1; }
+    .lookup button { width:auto; }
+    .notice { display:none; margin-top:14px; border-radius:10px; padding:11px 12px; font-size:13px; }
+    .notice.error { display:block; background:#fff0f0; color:#9d3030; }
+    .notice.ok { display:block; background:#eaf8f3; color:#176e5b; }
+    .spinner { width:16px; height:16px; display:inline-block; border:2px solid rgba(255,255,255,.55); border-top-color:white; border-radius:50%; animation:spin .7s linear infinite; vertical-align:-3px; margin-right:8px; }
+    @keyframes spin { to { transform:rotate(360deg); } }
+    @media (max-width:850px) { .grid { grid-template-columns:1fr; } .hero { align-items:start; } .cards { grid-template-columns:1fr; } header { padding:0 18px; } main { padding:24px 16px; } }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <header>
+      <div class="brand"><div class="brand-mark">✦</div>TripMate AI</div>
+      <div class="header-actions">
+        <div class="status-pill"><span class="status-dot"></span><span id="healthText">Checking system...</span></div>
+      </div>
+    </header>
+    <main>
+      <div class="hero">
+        <div><h1>Plan your next journey</h1><p>Coordinate research, budget, itinerary, and approval in one workspace.</p></div>
+      </div>
+      <div class="grid">
+        <aside class="card panel">
+          <h2>Trip details</h2>
+          <form id="tripForm">
+            <label for="destination">Destination</label>
+            <input id="destination" name="destination" value="Jaipur" minlength="2" maxlength="100" required>
+            <div class="two">
+              <div><label for="days">Duration</label><input id="days" name="days" type="number" min="1" max="30" value="3" required></div>
+              <div><label for="travelers">Travelers</label><input id="travelers" name="travelers" type="number" min="1" max="20" value="2" required></div>
+            </div>
+            <div class="two">
+              <div><label for="budget">Budget</label><input id="budget" name="budget" type="number" min="1" step="0.01" value="30000" required></div>
+              <div><label for="currency">Currency</label><select id="currency" name="currency"><option>INR</option><option>USD</option><option>EUR</option><option>JPY</option></select></div>
+            </div>
+            <label for="interests">Interests</label>
+            <input id="interests" name="interests" value="heritage, local food" placeholder="heritage, local food">
+            <label for="dates">Travel dates</label>
+            <input id="dates" name="dates" placeholder="December 2026">
+            <label for="requirements">Special requirements</label>
+            <textarea id="requirements" name="requirements" placeholder="Dietary needs, accessibility, family considerations"></textarea>
+            <div class="check-row"><input id="approval" type="checkbox" checked><label for="approval">Require human approval</label></div>
+            <button id="planButton" class="primary" type="submit">Generate trip plan</button>
+          </form>
+          <div class="lookup">
+            <input id="tripId" placeholder="Trip ID">
+            <button class="secondary" type="button" id="lookupButton">Check</button>
+          </div>
+          <div id="notice" class="notice"></div>
+        </aside>
+        <section class="card output">
+          <div class="output-head"><h2>Trip workspace</h2><span id="tripIdLabel" class="tag">No active trip</span></div>
+          <div id="output" class="empty">
+            <div><div class="empty-icon">🧭</div><strong>Your itinerary will appear here</strong><p>Complete the trip details and generate a plan.</p></div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+  <script>
+    let activeTripId = null;
+    const $ = id => document.getElementById(id);
+
+    async function checkHealth() {
+      try {
+        const response = await fetch('/api/v1/health');
+        const data = await response.json();
+        $('healthText').textContent = data.status === 'healthy' ? 'All systems operational' : 'System degraded';
+      } catch (_) { $('healthText').textContent = 'API unavailable'; }
+    }
+
+    function escapeHtml(value) {
+      return String(value ?? '').replace(/[&<>"']/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'})[ch]);
+    }
+
+    function showNotice(message, kind='ok') {
+      const el = $('notice');
+      el.className = `notice ${kind}`;
+      el.textContent = message;
+    }
+
+    function renderStatus(data) {
+      const status = data.status || (data.is_paused ? 'PENDING_APPROVAL' : 'COMPLETED');
+      const budget = data.estimated_cost ?? data.budget_analysis?.total_estimated_cost;
+      const itinerary = data.itinerary_preview || data.itinerary || data.response?.itinerary || [];
+      const destination = data.destination || data.response?.destination || 'Destination';
+      const days = data.days || data.response?.days;
+      $('tripIdLabel').textContent = activeTripId || 'Trip';
+      $('output').className = 'content';
+
+      let html = `<div class="meta">
+        <span class="tag ${status === 'PENDING_APPROVAL' || status === 'PENDING' ? 'pending' : 'success'}">${escapeHtml(status)}</span>
+        <span class="tag">${escapeHtml(destination)}</span>
+        ${days ? `<span class="tag">${escapeHtml(days)} days</span>` : ''}
+      </div>`;
+
+      html += `<div class="cards">
+        <div class="metric"><span>Destination</span><strong>${escapeHtml(destination)}</strong></div>
+        <div class="metric"><span>Estimated cost</span><strong>${budget == null ? 'Pending' : escapeHtml(budget)}</strong></div>
+        <div class="metric"><span>Current stage</span><strong>${escapeHtml(data.current_stage || (data.is_paused ? 'Approval' : 'Complete'))}</strong></div>
+      </div>`;
+
+      if (itinerary.length) {
+        html += '<div class="section"><h3>Daily itinerary</h3>';
+        itinerary.forEach(day => {
+          const activities = [...(day.morning_activities || []), ...(day.afternoon_activities || []), ...(day.evening_activities || [])];
+          html += `<div class="day"><strong>Day ${escapeHtml(day.day_number)} — ${escapeHtml(day.theme)}</strong><ul>${activities.map(item => `<li>${escapeHtml(item)}</li>`).join('') || '<li>Itinerary details pending</li>'}</ul></div>`;
+        });
+        html += '</div>';
+      }
+
+      if (data.is_paused || status === 'PENDING_APPROVAL' || status === 'PENDING') {
+        html += `<div class="section"><h3>Human review</h3><p style="color:#68718a">Review the proposed plan, then approve or reject it.</p>
+          <label for="reviewComment">Review comment</label><textarea id="reviewComment" placeholder="Optional feedback"></textarea>
+          <div class="actions">
+            <button class="success" type="button" onclick="submitDecision('APPROVED')">Approve</button>
+            <button class="secondary" type="button" onclick="submitDecision('MODIFICATION_REQUESTED')">Request changes</button>
+            <button class="danger" type="button" onclick="submitDecision('REJECTED')">Reject</button>
+          </div></div>`;
+      }
+
+      $('output').innerHTML = html;
+    }
+
+    $('tripForm').addEventListener('submit', async event => {
+      event.preventDefault();
+      const button = $('planButton');
+      button.disabled = true;
+      button.innerHTML = '<span class="spinner"></span>Planning...';
+      showNotice('', 'ok');
+
+      const interestText = $('interests').value;
+      const payload = {
+        destination: $('destination').value,
+        days: Number($('days').value),
+        budget: Number($('budget').value),
+        travelers: Number($('travelers').value),
+        currency: $('currency').value,
+        interests: interestText ? interestText.split(',').map(x => x.trim()).filter(Boolean) : [],
+        travel_dates: $('dates').value || null,
+        special_requirements: $('requirements').value || null
+      };
+
+      try {
+        const requireApproval = $('approval').checked;
+        const response = await fetch(`/api/v1/trips/plan?require_approval=${requireApproval}`, {
+          method: 'POST', headers: {'Content-Type':'application/json'}, body: JSON.stringify(payload)
+        });
+        const data = await response.json();
+        if (!response.ok) throw new Error(data.detail || 'Trip planning failed');
+        activeTripId = data.trip_id;
+        $('tripId').value = activeTripId;
+        if (data.response) {
+          renderStatus({...data.response, status:data.status, is_paused:data.is_paused});
+        } else if (data.data) {
+          await lookupTrip(activeTripId);
+        }
+        showNotice(`Trip ${activeTripId} created successfully.`);
+      } catch (error) {
+        showNotice(error.message, 'error');
+      } finally {
+        button.disabled = false;
+        button.textContent = 'Generate trip plan';
+      }
+    });
+
+    async function lookupTrip(tripId = $('tripId').value.trim()) {
+      if (!tripId) { showNotice('Enter a trip ID first.', 'error'); return; }
+      try {
+        const response = await fetch(`/api/v1/approvals/${encodeURIComponent(tripId)}`);
+        const data = await response.json();
+        if (!response.ok) throw new Error(data.detail || 'Trip not found');
+        activeTripId = tripId;
+        renderStatus(data);
+        showNotice('Trip status refreshed.');
+      } catch (error) {
+        showNotice(error.message, 'error');
+      }
+    }
+
+    $('lookupButton').addEventListener('click', () => lookupTrip());
+
+    async function submitDecision(decision) {
+      if (!activeTripId) return;
+      try {
+        const response = await fetch(`/api/v1/approvals/${encodeURIComponent(activeTripId)}/decision`, {
+          method:'POST', headers:{'Content-Type':'application/json'},
+          body: JSON.stringify({decision, comment:$('reviewComment')?.value || null, reviewer_id:'web_ui'})
+        });
+        const data = await response.json();
+        if (!response.ok) throw new Error(data.detail || 'Decision failed');
+        renderStatus({...data, status:data.status || decision, is_paused:false});
+        showNotice(`Decision ${decision.toLowerCase()} submitted.`);
+      } catch (error) {
+        showNotice(error.message, 'error');
+      }
+    }
+
+    checkHealth();
+  </script>
+</body>
+</html>
